@@ -11,7 +11,7 @@ const SearchBar = ({ onSubmit }) => {
             <form onSubmit={onFormSubmit} className="ui form" >
                 <div className="field" >
                     <label>Image Search</label>
-                    <input type="text" name="search" placeholder="" valuue={term} onChange={(event) => { setTerm(event.target.value) }} />
+                    <input type="text" name="search" placeholder="" value={term} onChange={(event) => { setTerm(event.target.value) }} />
                 </div>
             </form >
         </div >
