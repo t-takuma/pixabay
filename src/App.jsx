@@ -15,7 +15,7 @@ const App = () => {
                 key: Apikey,
                 q: term,
             };
-            const response = await axios.get("http://pixabay.com/api/", { params });
+            const response = await axios.get("https://pixabay.com/api/", { params });
             console.log(response);
             setImages(response.data.hits);
             if (response.data.toral === 0) {
